@@ -1,28 +1,24 @@
-var num=prompt("what is number till you wany cube");
+    
+function primefun(num){
+    if(num<1){
+        return("wrong Input");
+}
 
-
-
-const findPrime(num) {
-    let i, primes = [2, 3], n = 5;
-    const isPrime = n => {
-       let i = 1, p = primes[i],
-       limit = Math.ceil(Math.sqrt(n));
-       while (p <= limit) {
-          if (n % p === 0) {
-             return false;
-          }
-          i += 1;
-          p = primes[i];
-       }
-       return true;
+for(let i=1;i<num;i++){
+    for(let j=2;j<i;j++){
+        if(i%j==0){
+            break;
+        }else{
+            console.log(i);
+            break;
+        }
     }
-    for (i = 2; i <= num; i += 1) {
-       while (!isPrime(n)) {
-          n += 2;
-       }
-       primes.push(n);
-       n += 2;
-    };
-    return primes[num - 1];
- }
- console.log(findPrime(num));
+
+
+}
+
+
+}
+
+let num= parseInt(prompt("Enter the no."));
+prime= primefun(50);
