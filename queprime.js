@@ -1,24 +1,24 @@
-    
-function primefun(num){
-    if(num<1){
-        return("wrong Input");
-}
-
-for(let i=1;i<num;i++){
-    for(let j=2;j<i;j++){
-        if(i%j==0){
-            break;
-        }else{
-            console.log(i);
-            break;
-        }
-    }
+function primetillN(num){
 
 
-}
+    for(let i=2;i<=num;i++){
+        let count=0;
 
+
+        for(let j=0;j<=i;j++){
+            
+
+            if(i%j==0){
+                count=count+1;
+            }
+}  
+if(count==2){
+    console.log(""+i);  
+   }
+
+ }
 
 }
 
 let num= parseInt(prompt("Enter the no."));
-prime= primefun(50);
+prime= primetillN(num);
